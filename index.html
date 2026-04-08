@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1> Kanban Board </h1>
+    <form id="formulario-kanban">
+        <label for="IDEA"> IDEA: </label>
+        <input type="text" id="IDEA" placeholder="¡Escribe aquí tu idea!" required>
+        <button type="submit"> Añadir </button>
+    </form>
+
+    <div class="contenedor-tablero">
+        <section class="columna">
+            <h2>Por Hacer / No Started</h2>
+            <div class="listas" id="list-hacer"></div>
+        </section>
+
+        <section class="columna">
+            <h2>En Progreso / In Progress</h2>
+            <div class="listas" id="list-progreso"></div>
+        </section>
+
+        <section class="columna">
+            <h2>Terminado / Done</h2>
+            <div class="listas" id="list-terminado"></div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

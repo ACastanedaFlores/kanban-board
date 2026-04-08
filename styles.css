@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #eaf4ff;
+    /* azul base */
+}
+
+.contenedor-tablero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a5d6e;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2f3e4e;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Label */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #2f3e4e;
+    font-weight: bold;
+}
+
+/* Input */
+form input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: 2px solid #a8e6cf;
+    outline: none;
+    margin-bottom: 15px;
+    background-color: #f7fbff;
+    transition: 0.3s;
+}
+
+/* Efecto al escribir */
+form input:focus {
+    border-color: #5aa9e6;
+    box-shadow: 0 0 5px rgba(90, 169, 230, 0.5);
+}
+
+/* Botón */
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5aa9e6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+form button:hover {
+    background-color: #ff8fab;
+    transform: scale(1.05);
+}
+
+.mover {
+    display: block;
+    margin: 0 auto;
+}
+
+.columna {
+    background-color: #f7fbff;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #a8e6cf;
+    /* 💚 verde más visible */
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border-left: 6px solid #ffb6c1;
+    /* 🌸 rosa bien visible */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #d0e3f5;
+    border-right: 1px solid #d0e3f5;
+    border-bottom: 1px solid #d0e3f5;
+    box-shadow: 0 2px 6px rgba(100, 149, 237, 0.2);
+    /* azul suave */
+}
